@@ -12,6 +12,11 @@ $ python3 EDSC.py
 
 ```
 
+### Screen Shot
+
+
+![Alt text](ScreenShot.png)
+
 
 
 
