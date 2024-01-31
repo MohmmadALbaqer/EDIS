@@ -1,0 +1,7 @@
+tk
+pydub
+opencv-python
+numpy
+wave
+termcolor
+colorama
