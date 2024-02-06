@@ -1,4 +1,4 @@
-![Logo](/home/kali/EDIS/Logo.jpg)
+![Logo](Logo.jpg)
 
 
 
