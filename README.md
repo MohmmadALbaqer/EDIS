@@ -1,3 +1,8 @@
+![Logo](/home/kali/EDIS/Logo.jpg)
+
+
+
+
 ### Installation (Linux)
 
 ```
