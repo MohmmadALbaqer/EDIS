@@ -20,7 +20,7 @@ $ python3 EDSC.py
 ### Screen Shot
 
 
-![Alt text](screenshot.png)
+![Alt text](ScreenShot.png)
 
 
 
