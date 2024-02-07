@@ -17,6 +17,17 @@ $ python3 EDISC.py
 
 ```
 
+
+
+### UPDATE Tool 
+
+```
+$ python3 update.py
+```
+
+
+
+
 ### Screen Shot
 
 
