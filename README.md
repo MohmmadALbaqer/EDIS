@@ -13,7 +13,7 @@ $ python3 install.py
 $ bash install.sh
 $ sudo python3 EDIS.py
 # OR
-$ python3 EDSC.py
+$ python3 EDISC.py
 
 ```
 
