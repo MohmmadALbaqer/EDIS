@@ -1,4 +1,4 @@
-![Logo](Logo.jpg)
+![Logo](Logo.png)
 
 
 
