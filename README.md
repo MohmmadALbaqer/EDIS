@@ -31,7 +31,7 @@ $ python3 update.py
 ### Screen Shot
 
 
-![Alt text](ScreenShot.png)
+![Alt text](screenshot.png)
 
 
 
