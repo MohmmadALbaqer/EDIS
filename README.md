@@ -5,6 +5,7 @@
 It is an abbreviation for the word (Encryption Decryption and Image Security). The tool encrypts an image in any format (JPG) or (PNG) and then converts it to an audio file that is also encrypted and incomprehensible. It can also decrypt the sound and return the image to what it was.
 ```
 ###Screenshot
+
 ![Logo](screenshot-EDIS.png)
 
 
