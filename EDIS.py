@@ -17,28 +17,26 @@ if os.geteuid() != 0:
     print(f"{Fore.YELLOW}[{Fore.RED}!{Fore.YELLOW}] {Fore.WHITE}You need to {Fore.YELLOW}run {Fore.WHITE}this program with {red_sudo} Please !.")
     sys.exit(1)
 
-
-print(f'''
-{Fore.YELLOW}                         ___
-{Fore.YELLOW} _________ ________      | |    {Fore.YELLOW} _______ 
-{Fore.YELLOW}|_   ___  |_   ___ \. ___|H{Fore.YELLOW}|___ {Fore.YELLOW}/  ___  |
-{Fore.YELLOW}  | |_  \_| | |   \. \  |{Fore.RED}[E]{Fore.YELLOW}|  {Fore.YELLOW}|  (__ \_|
-{Fore.YELLOW}  |  _|  _  | |    | |  |{Fore.RED}[D]{Fore.YELLOW}|   {Fore.YELLOW}'.___\-. 
-{Fore.YELLOW} _| |___/ |_| |___.' /  |{Fore.RED}[I]{Fore.YELLOW}|   {Fore.YELLOW}|\\____) |
-{Fore.YELLOW}|_________|________.'   |{Fore.RED}[S]{Fore.YELLOW}|   {Fore.YELLOW}|_______.'
-{Fore.YELLOW}                        \ V /                      
-{Fore.YELLOW}                         \V/
-{Fore.YELLOW}                          V 
-''')
+print(f"""
+               {Fore.BLUE}.{Style.RESET_ALL}                
+              {Fore.BLUE}/ \\{Style.RESET_ALL}
+  {Fore.YELLOW}_____ ____  {Fore.BLUE}| |{Style.RESET_ALL} {Fore.YELLOW}____  
+ {Fore.YELLOW}| ____|  _ \ {Fore.BLUE}| |{Style.RESET_ALL}{Fore.YELLOW}/ ___| 
+ {Fore.YELLOW}|  _| | | | |{Fore.BLUE}|{Fore.RED}E{Fore.BLUE}|{Style.RESET_ALL}{Fore.YELLOW}\___ \ 
+ {Fore.YELLOW}| |___| |_| |{Fore.BLUE}|{Fore.RED}D{Fore.BLUE}|{Style.RESET_ALL}{Fore.YELLOW} ___) |
+ {Fore.YELLOW}|_____|____/ {Fore.BLUE}|{Fore.RED}I{Fore.BLUE}|{Style.RESET_ALL}{Fore.YELLOW}|____/ 
+              {Fore.BLUE}|{Fore.RED}S{Fore.BLUE}|{Style.RESET_ALL}
+           {Fore.WHITE}~{Fore.YELLOW}\==8==/{Fore.WHITE}~
+               {Fore.RED}8
+               0{Style.RESET_ALL}""")
 
 print(f"{Fore.WHITE}{Back.RED} [+] Encryption Decryption and Image Security. {Style.RESET_ALL}")
 
 print(f'''
- {Fore.RED}+------------------------------------------------------------------+
- {Fore.RED}|{Fore.GREEN} GitHub{Fore.WHITE} : {Fore.BLUE}MohmmadALbaqer {Fore.WHITE}|{Fore.YELLOW} https://www.github.com/MohmmadALbaqer/ {Fore.RED}|
- {Fore.RED}|{Fore.GREEN} Instagram{Fore.WHITE} :{Fore.BLUE} r94xs {Fore.WHITE}      |{Fore.YELLOW} https://www.instagram.comr94xs/        {Fore.RED}|
- {Fore.RED}+------------------------------------------------------------------+
-{Style.RESET_ALL}''')
+{Fore.RED}+------------------------------------------------------------------+
+{Fore.RED}|{Fore.GREEN} GitHub{Fore.WHITE} : {Fore.BLUE}MohmmadALbaqer {Fore.WHITE}|{Fore.YELLOW} https://www.github.com/MohmmadALbaqer/ {Fore.RED}|
+{Fore.RED}|{Fore.GREEN} Instagram{Fore.WHITE} :{Fore.BLUE} r94xs {Fore.WHITE}      |{Fore.YELLOW} https://www.instagram.comr94xs/        {Fore.RED}|
+{Fore.RED}+------------------------------------------------------------------+{Style.RESET_ALL}''')
 
 print(f"{Fore.GREEN}[+]{Fore.WHITE} press {Fore.YELLOW}C+Ctrl {Fore.WHITE}to Exit.{Style.RESET_ALL}")
 
