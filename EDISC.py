@@ -28,11 +28,10 @@ print(f'''{Fore.WHITE}
 ░▒█▄▄▄░▒█▄▄█░▄█▄░▒█▄▄▄█░▒█▄▄▀
 {Style.RESET_ALL}''')
 print(f'''
- {Fore.RED}+------------------------------------------------------------------+
- {Fore.RED}|{Fore.GREEN} GitHub{Fore.WHITE} : {Fore.BLUE}MohmmadALbaqer {Fore.WHITE}|{Fore.YELLOW} https://www.github.com/MohmmadALbaqer/ {Fore.RED}|
- {Fore.RED}|{Fore.GREEN} Instagram{Fore.WHITE} :{Fore.BLUE} r94xs {Fore.WHITE}      |{Fore.YELLOW} https://www.instagram.comr94xs/        {Fore.RED}|
- {Fore.RED}+------------------------------------------------------------------+
-{Style.RESET_ALL}''')
+{Fore.RED}+------------------------------------------------------------------+
+{Fore.RED}|{Fore.GREEN} GitHub{Fore.WHITE} : {Fore.BLUE}MohmmadALbaqer {Fore.WHITE}|{Fore.YELLOW} https://www.github.com/MohmmadALbaqer/ {Fore.RED}|
+{Fore.RED}|{Fore.GREEN} Instagram{Fore.WHITE} :{Fore.BLUE} r94xs {Fore.WHITE}      |{Fore.YELLOW} https://www.instagram.comr94xs/        {Fore.RED}|
+{Fore.RED}+------------------------------------------------------------------+{Style.RESET_ALL}''')
 
 print(f"{Fore.WHITE}{Back.RED} [+] Encryption Decryption and Image Security Classic. {Style.RESET_ALL}")
 
