@@ -4,4 +4,4 @@ opencv-python
 numpy
 wave
 termcolor
-colorama
+
