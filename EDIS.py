@@ -1,44 +1,57 @@
+#!/usr/bin/python3
+#!/usr/bin/env python3
+
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
 from pydub import AudioSegment
 import cv2
 import numpy as np
-import os
+import os; os.system('cls' if os.name == 'nt' else 'clear')
 import wave
 import time
 import sys
 from termcolor import colored
-from colorama import Fore, Style, Back, init
-os.system("clear")
 
-if os.geteuid() != 0:
-    red_sudo = "\033[1;31m" + "sudo" + "\033[0m"
-    print(f"{Fore.YELLOW}[{Fore.RED}!{Fore.YELLOW}] {Fore.WHITE}You need to {Fore.YELLOW}run {Fore.WHITE}this program with {red_sudo} Please !.")
-    sys.exit(1)
+R = "\033[91;1m"  # Red
+G = "\033[92;1m"  # Green
+B = "\033[94;1m"  # Blue
+Y = "\033[93;1m"  # Yellow
+C = "\033[96;1m"  # Cyan
+M = "\033[95;1m"  # Magenta
+W = "\033[97;1m"  # White
+D = "\033[90;1m"  # Grey
+S = "\033[0m"     # Reset
 
-print(f"""
-               {Fore.BLUE}.{Style.RESET_ALL}                
-              {Fore.BLUE}/ \\{Style.RESET_ALL}
-  {Fore.YELLOW}_____ ____  {Fore.BLUE}| |{Style.RESET_ALL} {Fore.YELLOW}____  
- {Fore.YELLOW}| ____|  _ \ {Fore.BLUE}| |{Style.RESET_ALL}{Fore.YELLOW}/ ___| 
- {Fore.YELLOW}|  _| | | | |{Fore.BLUE}|{Fore.RED}E{Fore.BLUE}|{Style.RESET_ALL}{Fore.YELLOW}\___ \ 
- {Fore.YELLOW}| |___| |_| |{Fore.BLUE}|{Fore.RED}D{Fore.BLUE}|{Style.RESET_ALL}{Fore.YELLOW} ___) |
- {Fore.YELLOW}|_____|____/ {Fore.BLUE}|{Fore.RED}I{Fore.BLUE}|{Style.RESET_ALL}{Fore.YELLOW}|____/ 
-              {Fore.BLUE}|{Fore.RED}S{Fore.BLUE}|{Style.RESET_ALL}
-           {Fore.WHITE}~{Fore.YELLOW}\==8==/{Fore.WHITE}~
-               {Fore.RED}8
-               0{Style.RESET_ALL}""")
+ERROR = "\033[93;1m" + "[" + "\033[91;1m" + "ERROR" + "\033[93;1m" + "]" + "\033[91;1m "
+please = "\033[93;1m" + "[" + "\033[91;1m" + "!" + "\033[93;1m" + "]" + "\033[91;1m"
 
-print(f"{Fore.WHITE}{Back.RED} [+] Encryption Decryption and Image Security. {Style.RESET_ALL}")
-
-print(f'''
-{Fore.RED}+------------------------------------------------------------------+
-{Fore.RED}|{Fore.GREEN} GitHub{Fore.WHITE} : {Fore.BLUE}MohmmadALbaqer {Fore.WHITE}|{Fore.YELLOW} https://www.github.com/MohmmadALbaqer/ {Fore.RED}|
-{Fore.RED}|{Fore.GREEN} Instagram{Fore.WHITE} :{Fore.BLUE} r94xs {Fore.WHITE}      |{Fore.YELLOW} https://www.instagram.comr94xs/        {Fore.RED}|
-{Fore.RED}+------------------------------------------------------------------+{Style.RESET_ALL}''')
-
-print(f"{Fore.GREEN}[+]{Fore.WHITE} press {Fore.YELLOW}C+Ctrl {Fore.WHITE}to Exit.{Style.RESET_ALL}")
+def admin():
+    try:
+        if os.geteuid() != 0:
+            sudo = "\033[1;31m" + "sudo" + "\033[0m"
+            root = "\033[93;1m" + "root" + "\033[97;1m"
+            print(f"{please} {W}please use {root} Type a command {sudo}")
+            sys.exit(0)
+        else:
+            print(f"""
+               {B}.{W}                 
+              {B}/ \{Y}          
+{Y}  _____ ____  {B}| |{Y} ____     
+{Y} | ____|  _ \ {B}| |{Y}/ ___|    
+{Y} |  _| | | | |{B}|{R}E{B}|{Y}\___ \    
+{Y} | |___| |_| |{B}|{R}D{B}|{Y} ___) |   
+{Y} |_____|____/ {B}|{R}I{B}|{Y}|____/    
+              {B}|{R}S{B}|{Y}          
+           {W}~{Y}\==8==/{W}~       
+               {R}8{W}           
+               {R}0{W}  
+{W}[{R}-{G}-{B}-{W}]   - {B}[INSTAGRAM]  {W}: {Y}https://www.instagram.com/r94xs/        {W}[{R}-{G}-{B}-{W}]
+{W}[{R}-{G}-{B}-{W}]   - {G}[GitHub]     {W}: {Y}https://www.github.com/MohmmadALbaqer/  {W}[{R}-{G}-{B}-{W}]         
+""")
+    except Exception as e:
+        print(ERROR + str(e))
+admin()
 
 voice_folder = "voice"
 image_folder = "image"
@@ -134,11 +147,10 @@ def spin(progress_desc, custom_spinner=False):
     print(done_message)
     time.sleep(0.5)
 
-
-encode_button = tk.Button(root, text="[+] Encode Image to Sound", command=encode_image)
+encode_button = tk.Button(root, text="[Encode Image to Sound]", command=encode_image)
 encode_button.pack()
 
-decode_button = tk.Button(root, text="[+] Decode Sound to Image", command=decode_sound)
+decode_button = tk.Button(root, text="[Decode Sound to Image]", command=decode_sound)
 decode_button.pack()
 
 root.mainloop()
