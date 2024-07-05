@@ -7,7 +7,7 @@ It is an abbreviation for the word (Encryption Decryption and Image Security). T
 
 ### Screenshot
 
-![Logo](screenshot-EDIS.png)
+![Logo](edis.png)
 
 
 ### Installation (Linux)
@@ -18,14 +18,6 @@ $ pip3 install -r requirements.txt
 $ python3 install.py
 $ bash install.sh
 $ sudo python3 EDIS.py
-# OR
-$ python3 EDISC.py
-```
-
-### UPDATE Tool 
-```
-$ python3 update.py
-```
 
 ## [~] Find Me on :
 
